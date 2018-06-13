@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <span>Addis Chat</span>
+    <span class="spacer"></span>
+    <div class="search" *ngIf="auth.isAuthenticated()">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Search" [(ngModel)]="searchTerm" (keyup)="filter()" >
+    </div>
+    <span class="spacer"></span>
+    <button mat-icon-button *ngIf="auth.isAuthenticated()" [matMenuTriggerFor]="accountMenu" >
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #accountMenu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item [routerLink]="['/profile']">
+        <span>{{auth.name}}</span>
+      </button>
+      <button mat-menu-item (click)="signOut()">
+        <span>Sign Out</span>
+      </button>
+    </mat-menu>
+    <button mat-button *ngIf="!auth.isAuthenticated()" (click)="signIn()">Sign In</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

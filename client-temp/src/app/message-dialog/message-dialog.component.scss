@@ -1,0 +1,32 @@
+mat-list-item {
+  &.current-user {
+    float: right;
+    clear: both;
+    background-color: #aec1ca;
+    margin: 2px;
+    border-radius: 12px;
+  }
+  &.other-user {
+    float: left;
+    clear: both;
+    background-color: #cccccc;
+    margin: 2px;
+    border-radius: 12px;
+  }
+
+}
+mat-form-field {
+  width: 100%;
+  position: relative;
+  bottom: -24px;
+}
+mat-dialog-actions{
+  justify-content: flex-end;
+
+}
+
+h2 {
+  margin-top: -18px;
+}
+
+

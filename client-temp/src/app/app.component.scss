@@ -1,0 +1,33 @@
+div.search {
+  mat-icon {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 14px;
+  }
+  input {
+    width: 100%;
+    border: none;
+    height: 34px;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: #485cce;
+    color: #fff;
+    transition-duration: 0.5s;
+    &:focus {
+      background-color: #051b96;
+      transition-duration: 0.5s;
+      outline-width: 0;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+    &:-ms-input-placeholder {
+      color: #fff;
+    }
+    &::-ms-input-placeholder {
+      color: #fff;
+    }
+  }
+}
