@@ -1,5 +1,6 @@
 client/node_modules/
 server/node_modules/
+client/package-lock.json
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
@@ -20,7 +21,7 @@ client/.c9/
 client/*.launch
 client/.settings/
 client/*.sublime-workspace
-client/package-lock.json
+
 
 # IDE - VSCode
 client/.vscode/*
