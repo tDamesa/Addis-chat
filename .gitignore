@@ -20,6 +20,7 @@ client/.c9/
 client/*.launch
 client/.settings/
 client/*.sublime-workspace
+client/package-lock.json
 
 # IDE - VSCode
 client/.vscode/*
